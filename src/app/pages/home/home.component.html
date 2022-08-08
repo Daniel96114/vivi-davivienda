@@ -1,0 +1,3 @@
+<app-header-vivi [title]="this.title"></app-header-vivi>
+
+<app-option-list *ngFor="let option of list"  [option]="option" (selectOption)="showModal($event)"></app-option-list>

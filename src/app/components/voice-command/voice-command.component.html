@@ -1,0 +1,118 @@
+<div mat-dialog-content>
+  <div *ngIf="step === 1">
+    <div class="modal-vivi-info">
+      <span class="modal-vivi-info__title">Hola Cristian,</span>
+      <p class="modal-vivi-info__content">Tenga en cuenta que para realizar una transferencia por voz a DaviPlata, sus
+        Cuentas deben estar activas y con
+        saldo.</p>
+    </div>
+    <div class="modal-vivi-button">
+      <button mat-fab color="warn" (click)="nextStep()">
+        <img src="../../../assets/img/Grupo 16318.svg" />
+      </button>
+
+    </div>
+  </div>
+  <div *ngIf="step === 2">
+    <div class="modal-vivi-info">
+      <span class="modal-vivi-info__title">Hola Cristian,</span>
+      <p class="modal-vivi-info__content">Por lo general usted realiza transferencias a los siguientes destinos
+        DaviPlata:</p>
+    </div>
+    <app-list-receiver *ngFor="let option of list" [option]="option"></app-list-receiver>
+    <div class="modal-vivi-info">
+      <p class="modal-vivi-info__content">Si desea transferir a algunos de estos destino diga el destino o nueva
+        transferencia:</p>
+      <span class="modal-vivi-info__title">Transferir a mamá</span>
+      <span class="modal-vivi-info__title">Transferir a otro Daviplata</span>
+    </div>
+    <div class="modal-vivi-button">
+      <button mat-fab color="warn" (click)="nextStep()">
+        <img src="../../../assets/img/Grupo 16318.svg" />
+      </button>
+
+    </div>
+
+  </div>
+  <div *ngIf="step === 3">
+    <div class="modal-vivi-info">
+      <span class="modal-vivi-info__title">Hola Cristian,</span>
+      <p class="modal-vivi-info__content">Por lo general usted realiza transferencias a los siguientes destinos
+        DaviPlata:</p>
+    </div>
+    <app-list-receiver *ngFor="let option of list" [option]="option"></app-list-receiver>
+    <div class="modal-vivi-info">
+      <p class="modal-vivi-info__content">Si desea transferir a algunos de estos destino diga el destino o nueva
+        transferencia:</p>
+      <span class="modal-vivi-info__title">Transferir a mamá</span>
+      <span class="modal-vivi-info__title">Transferir a otro Daviplata</span>
+    </div>
+    <div class="modal-vivi-button">
+      <span class="modal-vivi-info__title modal-vivi-info__title--black">"Transferir a mamá"</span>
+
+      <img src="../../../assets/img/Rectángulo 305.png" (click)="nextStep()" />
+    </div>
+  </div>
+  <div *ngIf="step === 4">
+    <div class="modal-vivi-info">
+      <p class="modal-vivi-info__content">Indique alias o los cuatro últimos dígitos de la Cuenta desde la cual
+        realizará la transferencia:</p>
+      <span class="modal-vivi-info__title">Cuenta terminada en 1234</span>
+      <app-list-products *ngFor="let option of productsList" [optionProduct]="option"></app-list-products>
+    </div>
+    <div class="modal-vivi-button">
+      <span class="modal-vivi-info__title modal-vivi-info__title--center">“Quiero hacer la transferencia desde mi Cuenta
+        de <span class="modal-vivi-info__title modal-vivi-info__title--black"> Ahorros terminada en 1234”</span></span>
+
+      <img src="../../../assets/img/Rectángulo 305.png" (click)="nextStep()" />
+    </div>
+
+  </div>
+  <div *ngIf="step === 5">
+    <div class="modal-vivi-info">
+      <p class="modal-vivi-info__content">Indique alias o los cuatro últimos dígitos de la Cuenta desde la cual
+        realizará la transferencia:</p>
+      <span class="modal-vivi-info__title">Cuenta terminada en 1234</span>
+      <app-list-products *ngFor="let option of productsList" [optionProduct]="option"></app-list-products>
+    </div>
+    <div class="modal-vivi-button">
+      <span class="modal-vivi-info__title modal-vivi-info__title--center">“Quiero hacer la transferencia desde mi Cuenta
+        de <span class="modal-vivi-info__title modal-vivi-info__title--black"> Ahorros terminada en 1234”</span></span>
+    </div>
+    <div class="modal-vivi-button">
+      <button mat-fab color="warn" (click)="nextStep()">
+        <img src="../../../assets/img/Grupo 16318.svg" />
+      </button>
+
+    </div>
+  </div>
+  <div *ngIf="step === 6">
+    <div class="modal-vivi-info">
+      <p class="modal-vivi-info__content">Para continuar su transacción diga <b>Transferir</b>, de lo contrario indique
+        el campo que desea modificar:</p>
+      <span class="modal-vivi-info__title">Modificar destino</span>
+    </div>
+    <br>
+    <app-transaction-resume [infoVoucher]="listVoucher" [isShowHeader]='false'></app-transaction-resume>
+    <div class="modal-vivi-button">
+      <button mat-fab color="warn" (click)="nextStep()">
+        <img src="../../../assets/img/Grupo 16318.svg" />
+      </button>
+
+    </div>
+  </div>
+  <div *ngIf="step === 7">
+    <div class="modal-vivi-info">
+      <p class="modal-vivi-info__content">Cristian, ha realizado la transferencia exitosa a DaviPlata.</p>
+      <p class="modal-vivi-info__content"> ¿Desea realizar otra transferencia a DaviPlata?</p>
+    </div>
+    <app-transaction-resume [infoVoucher]="listVoucher" [isShowHeader]='true'></app-transaction-resume>
+    <div class="modal-vivi-button">
+      <button mat-fab color="warn" (click)="nextStep()">
+        <img src="../../../assets/img/Grupo 16318.svg" />
+      </button>
+
+    </div>
+  </div>
+
+</div>

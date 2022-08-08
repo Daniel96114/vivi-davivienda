@@ -1,0 +1,79 @@
+<div class="resume">
+  <div class="resume-voucher">
+    <div class="resume-voucher-header" *ngIf="isShowHeader">
+      <div class="resume-voucher-header__item">
+        <label class="resume-voucher-header__label">
+          Número de comprobante
+        </label>
+        <label class="resume-voucher-header__value">
+          {{infoVoucher.voucherID}}
+        </label>
+      </div>
+      <div class="resume-voucher-header__item">
+        <label class="resume-voucher-header__label">
+          Día: {{infoVoucher.date}}
+
+
+        </label>
+        <label class="resume-voucher-header__label">
+          Hora: {{infoVoucher.time}}
+        </label>
+      </div>
+
+    </div>
+    <div class="resume-voucher-content">
+      <div class="resume-voucher-content__item">
+        <label class="resume-voucher-content__label resume-voucher-content__label--title">
+          Origen
+        </label>
+        <label class="resume-voucher-content__value">
+          {{infoVoucher.origin.accountType}}
+        </label>
+        <label class="resume-voucher-content__label">
+          {{infoVoucher.origin.number}}
+
+        </label>
+      </div>
+      <div class="resume-voucher-content__item">
+          <div class="resume-voucher-content__arrow">
+            <img src="../../../assets/img/flecha-correcta.png" />
+
+          </div>
+      </div>
+      <div class="resume-voucher-content__item">
+        <label class="resume-voucher-content__label resume-voucher-content__label--title">
+          Destino
+        </label>
+        <label class="resume-voucher-content__value">
+          {{infoVoucher.target.name}}
+
+
+        </label>
+        <label class="resume-voucher-content__label">
+          {{infoVoucher.target.number}}
+
+        </label>
+      </div>
+    </div>
+    <div class="resume-voucher-mount">
+      <label class="resume-voucher-mount__label">
+        Valor
+      </label>
+      <label class="resume-voucher-mount__value resume-voucher-mount__value--total-amount">
+        {{infoVoucher.value}}
+
+      </label>
+      <div class="resume-voucher-mount__item">
+        <label class="resume-voucher-mount__label">
+          Costo de la transacción:
+        </label>
+        <label class="resume-voucher-mount__value">
+          {{infoVoucher.cost}}
+
+        </label>
+      </div>
+    </div>
+  </div>
+
+
+</div>

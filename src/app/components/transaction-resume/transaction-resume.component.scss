@@ -1,0 +1,103 @@
+.resume {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 -7%;
+  padding: 0 7%;
+}
+
+.resume-voucher-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-color: #cacaca;
+  padding: 5% 0;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__label {
+    font: normal normal normal 13px/30px Roboto;
+    line-height: 1;
+  }
+  &__value {
+    font: normal normal bold 14px/30px Roboto;
+    color: black;
+    line-height: 1;
+  }
+}
+
+.resume-voucher-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 5%;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__label {
+    font: normal normal normal 13px/30px Roboto;
+    line-height: 1;
+  }
+
+  &__label--title {
+    font: normal normal normal 11px/30px Roboto;
+  }
+
+  &__value {
+    font: normal normal bold 14px/30px Roboto;
+    color: black;
+    line-height: 2;
+  }
+
+  &__arrow{
+      border-radius: 50%;
+      background-color:#f7f7f7;
+      display: flex;
+  }
+}
+
+.resume-voucher-mount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f7f7f7;
+  padding: 5%;
+  border-radius: 5%;
+  margin-bottom: 5%;
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__value {
+    font: normal normal bold 16px/30px Roboto;
+    color: black;
+    line-height: 2;
+    text-align: center;
+  }
+
+  &__value--total-amount {
+    font: normal normal bold 21px/30px Roboto;
+    border-bottom: 1px solid;
+    border-color: #cacaca;
+  }
+
+  &__label {
+    font: normal normal normal 13px/30px Roboto;
+    line-height: 1;
+    text-align: center;
+  }
+
+  
+}

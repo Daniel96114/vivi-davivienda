@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: "Roboto,Bold";
+  src: local("Roboto,Bold"),
+    url(./assets/fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto,Regular";
+  src: local("Roboto,Regular"),
+    url(./assets/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto,-";
+  src: local("Roboto,-"),
+    url(./assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+
+mat-dialog-container {
+  background: #f0f0f3 0% 0% no-repeat padding-box !important;
+  border-radius: 16px 16px 0px 0px !important;
+  opacity: 1;
+  width: 100%;
+}
+
+.cdk-global-overlay-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end!important;
+}
+
+.cdk-overlay-pane{
+  max-width: 100%!important;
+}
+
+.mat-flat-button.mat-warn, .mat-raised-button.mat-warn, .mat-fab.mat-warn, .mat-mini-fab.mat-warn{
+  background-color: #E0111B!important;
+}

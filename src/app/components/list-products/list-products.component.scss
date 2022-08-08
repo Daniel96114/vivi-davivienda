@@ -1,0 +1,25 @@
+.option-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: #cacaca;
+  &__title {
+    font: bold 16px/0px Roboto;
+    color: black;
+  }
+
+  &__content {
+    font: normal 14px/16px Roboto;
+  }
+
+  &__title--info {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__content--info {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
