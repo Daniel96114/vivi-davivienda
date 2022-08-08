@@ -5,11 +5,11 @@ Desarrollo funcionalidad de asistente de comando de voz para Davivienda móvil.
 1. Descargar repositorio
 2. Ejecutar
 ```go
-	npm-install
+	npm install
 ```
 3. Ejecutar 
 ```go
-	ng-serve
+	ng serve
 ```
 4. Abrir proyecto en localhost
 
