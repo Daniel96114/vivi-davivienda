@@ -1,6 +1,18 @@
 # Vivi
 Desarrollo funcionalidad de asistente de comando de voz para Davivienda móvil. 
 
+## Instrucciones
+1. Descargar repositorio
+2. Ejecutar
+```go
+	npm-install
+```
+3. Ejecutar 
+```go
+	ng-serve
+```
+4. Abrir proyecto en localhost
+
 ## Demo :clapper:
 ![Demo](resources/Animation.gif)
 
